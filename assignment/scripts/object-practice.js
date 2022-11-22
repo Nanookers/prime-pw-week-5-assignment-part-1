@@ -9,7 +9,11 @@ console.log('***** Object Practice *****')
   - Also give it an array 'favThreeFoods'
 */
 const me = {
-  // TODO - add properties here
+  firstName: 'Connor',
+  lastName: 'Clark',
+  hasSiblings: true,
+  shoeCount: 3,
+  faveThreeFoods: ['Kimchi', 'Eggs', 'Curry']
 };
 console.log('A little about me:', me);
 
@@ -19,6 +23,10 @@ console.log('A little about me:', me);
     created above to set its value. 
   - Console.log fullName
 */
+function fullName() {
+  return me.firstName + ` ` + me.lastName
+}
+console.log(fullName());
 
 
 
@@ -26,6 +34,9 @@ console.log('A little about me:', me);
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
+console.log(me.faveThreeFoods[0]);
+console.log(me.faveThreeFoods[2]); 
+
 
 
 
@@ -35,7 +46,20 @@ console.log('A little about me:', me);
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count. 
 */
+console.log(me.shoeCount);
 
+me.shoeCount = 4;
+console.log(me.shoeCount);
+
+/* 
+function anotherShoe() {
+  me.shoeCount ++;
+  return me.shoeCount;
+}
+
+console.log(anotherShoe());
+console.log(`new shoe count:`, me.shoeCount);
+*/
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -43,3 +67,11 @@ console.log('A little about me:', me);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+me.favoriteColor = `purple`;
+
+console.log( me );
+console.log( me.favoriteColor );
+
+//is it possible to use a function to make a template that adds whatever properties you want to 
+//an existing obect? I couldn't find a way of doing it.
