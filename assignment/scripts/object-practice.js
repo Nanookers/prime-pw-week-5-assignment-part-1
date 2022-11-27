@@ -51,12 +51,12 @@ console.log(me.shoeCount);
 me.shoeCount = 4;
 console.log(me.shoeCount);
 
-/* 
+
 function anotherShoe() {
   me.shoeCount ++;
   return me.shoeCount;
 }
-
+/* 
 console.log(anotherShoe());
 console.log(`new shoe count:`, me.shoeCount);
 */
@@ -73,5 +73,3 @@ me.favoriteColor = `purple`;
 console.log( me );
 console.log( me.favoriteColor );
 
-//is it possible to use a function to make a template that adds whatever properties you want to 
-//an existing obect? I couldn't find a way of doing it.
